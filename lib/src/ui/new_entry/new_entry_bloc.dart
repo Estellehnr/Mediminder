@@ -1,5 +1,4 @@
 import 'package:medicine_reminder/src/models/errors.dart';
-import 'package:medicine_reminder/src/models/medicine.dart';
 import 'package:medicine_reminder/src/models/medicine_type.dart';
 import 'package:rxdart/rxdart.dart';
 
