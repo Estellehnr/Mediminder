@@ -23,8 +23,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Color(0xFF3EB16F),
         elevation: 0.0,
       ),
-      body: Container(
-        color: Color(0xFFF6F8FC),
+      body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Flexible(
@@ -117,7 +116,7 @@ class TopContainer extends StatelessWidget {
             stream: globalBloc.medicineList$,
             builder: (context, snapshot) {
               return Padding(
-                padding: EdgeInsets.only(top: 16.0, bottom: 5 ),
+                padding: EdgeInsets.only(top: 16.0, bottom: 5),
                 child: Center(
                   child: Text(
                     !snapshot.hasData ? '0' : snapshot.data.length.toString(),
